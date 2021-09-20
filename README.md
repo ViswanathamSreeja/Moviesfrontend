@@ -1,3 +1,7 @@
+requirements:
+visualstudiocode is to be installed
+
+
 client folder has several folders
 
 #components
