@@ -5,9 +5,67 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#22254b;
+  color:white
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.container {
+max-width: 350px;
+  margin-top: 50px;
+}
+
+.signin {
+  padding: 5% 0;
+  background-color: #e1e8f2;
+}
+.continue{
+
+
+}
+.movie-container{
+  display:flex;
+  flex-wrap:wrap;
+}
+.movie{
+  background-color:#373b69;
+  border-radius: 3px;
+  width:200px;
+  margin:1rem;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  position: relative;
+}
+.movie img{
+  max-width:100%;
+}
+.movie-info{
+display: flex;
+align-items: center;
+padding:1rem;
+justify-content: space-between;
+}
+.movie-info h3{
+margin:0;
+}
+.movie-over{
+  color:#22254b;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0 -3px 5px rgba(0,0,0,0.1);
+  background-color: white;
+  position:absolute;
+  bottom:0;
+  left:0;
+  right: 0;
+  max-height: 70%;
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+.movie:hover .movie-over{
+  transform: translateY(0%);
 }
